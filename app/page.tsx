@@ -1,101 +1,17 @@
-import Image from "next/image";
+import HomeEntrySection from "@/components/home/entry";
+import HomeHeroSection from "@/components/home/hero";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <>
+        <HomeHeroSection />
+        <HomeEntrySection />
+        <section className="h-[100vh] bg-neutral-100">
+            <div className="container">
+                <h1 className="text-center text-4xl mb-20"> Welcome to Gallery </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nisi vitae ab illo at debitis nostrum voluptatum mollitia unde autem, repellat iure quisquam odit, nemo sit. Repellat adipisci laborum veniam, amet laboriosam esse magni excepturi. Sequi fugiat officia deleniti distinctio vel nostrum ipsam, aliquam labore sapiente ipsa maxime. Deleniti cupiditate hic porro natus quibusdam delectus quaerat. Maxime, soluta dolore libero tempore expedita aliquam laboriosam dolores rem doloribus sed iure eius. Voluptate possimus ut aliquam in rerum itaque suscipit corporis accusamus rem architecto saepe, eligendi iusto beatae alias non, deleniti commodi similique. Et iure incidunt facere, cum rerum impedit animi, ut modi harum iste reiciendis. Eveniet, porro. Facilis pariatur dolorum ullam saepe quia voluptatem nihil numquam officia tempora libero distinctio quo ipsam veritatis voluptas, assumenda iste! Sint laborum, cumque excepturi corporis aliquid, obcaecati id non nisi est alias voluptatibus pariatur in? Hic, voluptatum sint esse ducimus, quaerat consectetur odit amet quia sed molestias rem nesciunt! Placeat nobis, repellendus consequatur dicta laborum expedita eaque neque maiores laudantium amet esse repellat nemo ullam ea voluptatem laboriosam vitae. Perferendis voluptates libero nisi eaque accusantium dolores. Fugiat non maxime quam officiis? Cum delectus blanditiis reiciendis ex quisquam. Blanditiis error veniam unde pariatur velit eligendi maiores. </p>
+            </div>
+        </section>
+    </>
   );
 }
